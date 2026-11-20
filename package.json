@@ -1,27 +1,38 @@
 {
-  "name": "phool-and-prakash-backend",
+  "name": "rangpop-backend",
   "version": "1.0.0",
-  "description": "Backend API for the Phool & Prakash storefront",
+  "description": "Backend API for the RangPop storefront",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "seed:admin": "node scripts/seed-admin.js",
+    "seed:products": "node scripts/seed-products.js"
   },
   "keywords": [
-    "phool-and-prakash",
+    "rangpop",
     "express",
     "mongodb",
     "mongoose"
   ],
   "license": "UNLICENSED",
   "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.11.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.6.1",
     "express": "^4.21.2",
+    "express-rate-limit": "^8.7.5",
     "helmet": "^8.0.0",
-    "mongoose": "^8.24.7"
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.24.7",
+    "multer": "^2.5.0",
+    "nodemailer": "^10.6.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

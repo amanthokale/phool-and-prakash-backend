@@ -1,6 +1,6 @@
-# Phool & Prakash Backend
+# RangPop Backend
 
-Starter Node.js + Express API for the Phool & Prakash storefront.
+Starter Node.js + Express API for the RangPop storefront (RangPop, formerly "Phool & Prakash"; directory names and `PHOOL_PRAKASH_MONGODB_URI` keep the old name).
 
 ## Requirements
 - Node.js 18 or newer
@@ -36,7 +36,7 @@ Example response from `/api/health`:
 ## Environment variables
 - `PORT` — API port, default `5000`
 - `FRONTEND_URL` — allowed frontend origin for CORS, default `http://localhost:5173`
-- `MONGODB_URI` — reserved for the MongoDB Atlas connection in the next step
+- `PHOOL_PRAKASH_MONGODB_URI` — MongoDB Atlas connection string (required; the server exits if it is missing or the connection fails)
 
 ## Security notes
 - Never commit `.env` or real database credentials.
